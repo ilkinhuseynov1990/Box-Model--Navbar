@@ -1,0 +1,58 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.menu{
+    border:thin solid silver;
+}
+
+
+.menu ul{
+    list-style-type: none;
+}
+
+
+.menu ul li{
+    display: inline-block;
+    padding: 20px;
+    border-left: thin solid silver;
+    color:green;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:1.5em;
+    cursor: pointer;
+    position: relative;
+}
+
+
+.menu ul li:hover .submenu{
+    position: absolute;
+    display: block;
+    top:70px;
+    left:0;
+}
+
+.menu .submenu{
+    border:thin solid red;
+    overflow: hidden;
+    display: none;
+    width:900px;
+    text-align: center;
+    transition: 2s;
+}
+
+
+.menu .submenu .subsubmenu{
+    width:250px;
+    border:thin solid green;
+    float: left;
+}
+
+.menu .submenu ul li{
+    display: block;
+}
+.menu .submenu .subsubmenu li{
+    padding: 5px;
+    font-size: 1em;
+}
+

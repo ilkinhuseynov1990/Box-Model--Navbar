@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Coordinat</title>
+
+    <style>
+        .test {
+            width: 20px;
+            height: 20px;
+            border: thin solid silver;
+            border-radius: 100%;
+            text-align: center;
+            line-height: 1.3;
+            font-family: 'Courier New', Courier, monospace;
+            float: left;
+            margin-left: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="test" data-id="1">
+        i
+    </div>
+
+    <div class="test" data-id="2">
+        l
+    </div>
+
+    <div class="test" data-id="3">
+        k
+    </div>
+
+
+
+    <script>
+        var takeNumber = prompt("Please insert a number");
+
+        var test = document.querySelectorAll('.test');
+
+        for (var i = 0; i < test.length; i++) {
+
+            if (takeNumber == test[i].getAttribute("data-id")) {
+
+                test[i].style.backgroundColor = "red";
+                test[i].style.color = "white";
+            }
+
+        }
+
+    </script>
+</body>
+
+</html>
